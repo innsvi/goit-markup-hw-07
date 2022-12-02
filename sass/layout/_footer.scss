@@ -1,0 +1,129 @@
+.page-footer{
+    background-color: var(--bgcolor-footer);
+    color: var(--white-text-color);
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.page-footer__logo{
+    margin-bottom: 20px;
+}
+
+.page-footer__container{
+    display: flex;
+    align-items: baseline;
+}
+
+.contacts-footer__address{
+    color: var(--white-text-color);
+    text-decoration: none;
+    line-height: 1.8;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    padding: 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+    color: var(--accent-color);
+    }
+}
+
+.contacts-footer__post{
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.8;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    padding: 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+    color: var(--accent-color);
+    }
+}
+
+.contacts-footer__phone{
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.8;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    padding: 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+    color: var(--accent-color);
+    }
+}
+
+
+.contacts-footer__item:not(:last-child){
+    margin-bottom: 9px;
+}
+
+.footer-social{
+    margin-left: 70px;
+}
+
+.page-footer__subtitle{
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.social-footer__icon{
+    fill: var(--white-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &focus,
+    &:hover{
+    background-color: var(--accent-color);
+    }
+}
+
+
+.submit-container{
+    display:flex;
+    flex-direction: column;
+    margin-left: auto;
+}
+
+
+.input-email{
+    width: 358px;
+    height: 50px;
+    background-color: var(--bgcolor-footer);
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 16px;
+    outline: transparent;
+}
+
+.send-email{
+    display: flex;
+    align-items: center;
+}
+
+.button-footer{
+    height: 50px;
+    margin-left: 12px;
+    padding-left: 28px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-right: 18px;
+}
+
+.submit-icon{
+    margin-left: 13px;
+}
