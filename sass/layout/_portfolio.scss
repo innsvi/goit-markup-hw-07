@@ -2,50 +2,65 @@
     color: var(--accent-color);
 }
 
-.features-names{
-    margin-bottom: 50px;
-}
 .features-item{
     border-style: none;
     line-height: 1.6;
     text-align: center;
     letter-spacing: 0.03em;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover{
+        background-color: var(--accent-color);
+        color: var(--white-text-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        }
+
+        &:focus{
+        background-color: var(--accent-color);
+        color: var(--white-text-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        }
 }
 
-.examples-subtitle{
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+
+.examples{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+        &-subtitle{
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color:var(--primary-text-color);
+        margin-bottom: 4px;
+        }
+
+        &-text{
+        color: var(--article-text-color);
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.03em;
+        line-height: 1.9;
+        letter-spacing: 0.03em;
+        }
+
+        &-aftercard{
+        padding: 20px 24px;
+        border-right: 1px solid #EEEEEE;
+        border-left: 1px solid #EEEEEE;
+        border-bottom: 1px solid #EEEEEE;
+        }
 }
 
-.examples-text{
-    color: var(--article-text-color);
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0.03em;
-}
 
 .features-names{
     display: flex;
     justify-content: center;
-}
-
-.features-item:hover{
-    background-color: var(--accent-color);
-    color: var(--white-text-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.features-item:focus{
-    background-color: var(--accent-color);
-    color: var(--white-text-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.features-names{
+    margin-bottom: 50px;
     gap: 8px;
 }
+
 
 .features-item{
     padding: 6px 22px; 
@@ -57,35 +72,28 @@
     background: var(--bgcolor-team);
 }
 
-.features-title{
-    visibility: hidden;
-}
-
-.examples{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-}
 
 .examples-item {
     width: 370px;
+
+        &:last-child{
+        margin-right: 0;
+        }
 }
 
-.examples-item :last-child{
-    margin-right: 0;
-}
 
 .examples-link{
     display: block;
     text-decoration: none;
     outline: transparent;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus{
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
 }
 
-.examples-link:hover,
-.examples-link:focus{
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
 
 .overlay{
     width: 100%;
@@ -99,45 +107,26 @@
     background-color:rgba(33, 150, 243, 0.9);
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.examples-link:hover .overlay{
-    transform: translateY(0);
-}
+        .examples-link:hover & {
+        transform: translateY(0);
+        }
 
-.examples-link:focus .overlay{
-    transform: translateY(0);
-}
+        .examples-link:focus & {
+        transform: translateY(0);
+        }
 
-.overlay-wrapper{
-    position:relative;
-    overflow: hidden;
-}
 
-.overlay-text{
-    padding-left: 24px;
-    padding-right: 24px;
-    color: var(--white-text-color);
-    font-size: 18px;
-    line-height: 28px;
-}
+        &-wrapper{
+        position:relative;
+        overflow: hidden;
+        }
 
-.examples-aftercard{
-    padding: 20px 24px;
-    border-right: 1px solid #EEEEEE;
-    border-left: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
-}
-
-.examples-subtitle{
-    color:var(--primary-text-color);
-    margin-bottom: 4px;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-}
-
-.examples-text{
-    line-height: 1.9;
-    letter-spacing: 0.03em;
+        &-text{
+        padding-left: 24px;
+        padding-right: 24px;
+        color: var(--white-text-color);
+        font-size: 18px;
+        line-height: 28px;
+        }
 }

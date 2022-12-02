@@ -4,20 +4,18 @@
 
 .section-list__item{
     width: 270px;
-}
 
-.section-list__item:not(:first-child){
+    &:not(:first-child){
     margin-left: 30px;
-}
+    }
 
-.section-list__item-bg{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    &-bg{
+    @include flex;
     height: 120px;
     border-radius: 4px;
-    background-color: $bgcolor-team;
+    background-color: var(--bgcolor-team);
     margin-bottom: 30px;
+    }
 }
 
 .section-list__subtitle{

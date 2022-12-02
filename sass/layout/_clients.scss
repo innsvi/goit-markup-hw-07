@@ -1,12 +1,14 @@
 .list-client{
     gap: 30px;
+
+    &__icon{
+    fill: currentColor;
+    }
 }
 
 .list-client__item{
     color: var(--icon-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
     width: 170px;
     height: 92px;
     border: 1px solid var(--icon-color);
@@ -19,8 +21,4 @@
     border-color: #188CE8;
     color: #188CE8;
     }
-}
-
-.list-client__icon{
-    fill: currentColor;
 }

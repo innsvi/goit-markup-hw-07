@@ -4,16 +4,25 @@
 
     padding-top: 60px;
     padding-bottom: 60px;
-}
 
-.page-footer__logo{
+    &__logo{
     margin-bottom: 20px;
-}
+    }
 
-.page-footer__container{
+    &__container{
     display: flex;
     align-items: baseline;
+    }
+
+    &__subtitle{
+     margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    }
 }
+
+
 
 .contacts-footer__address{
     color: var(--white-text-color);
@@ -66,32 +75,6 @@
 .footer-social{
     margin-left: 70px;
 }
-
-.page-footer__subtitle{
-    margin-bottom: 20px;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.social-footer__icon{
-    fill: var(--white-text-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 44px;
-    height: 44px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &focus,
-    &:hover{
-    background-color: var(--accent-color);
-    }
-}
-
 
 .submit-container{
     display:flex;

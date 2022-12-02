@@ -10,19 +10,17 @@
     letter-spacing: 0.03em;
 }
 
-.works-list__item:not(:last-child){
-    margin-right: 30px;
-}
-
 .works-list__item{
     position:relative;
+    
+    &:not(:last-child){
+        margin-right: 30px;
+    }
 }
 
 .overlay-works{
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
     width: 100%;
     background-color:rgba(47, 48, 58, 0.8);
     height: 70px;
