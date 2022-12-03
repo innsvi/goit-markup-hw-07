@@ -68,7 +68,7 @@
     margin-left: auto;
 }
 
-.contact-link{
+.page-contacts__link{
     display: flex;
     align-items: center;
     color: var(--article-text-color);
@@ -89,9 +89,9 @@
     color: var(--accent-color);
     }
 
-    &-icon{
-    fill:currentColor;
-    margin-right: 10px;
+        .page-contacts__icon{
+        fill:currentColor;
+        margin-right: 10px;
 }
 }
 
